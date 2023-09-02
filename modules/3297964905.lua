@@ -1,6 +1,7 @@
 if getgenv().nexus then
 	return
 end 
+getgenv().nexus = true
 repeat
 	wait()
 until game:IsLoaded() and game.Players and game.Players.LocalPlayer and game.Players.LocalPlayer.Character
@@ -341,13 +342,13 @@ local L_38_ = {
 		Title = "Server",
 		Icon = "rbxassetid://10734949856"
 	}),
-	Premium = premium == "premium" and L_37_:AddTab({
-		Title = "Premium",
-		Icon = "rbxassetid://10709819149"
-	}),
 	Settings = L_37_:AddTab({
 		Title = "Settings",
 		Icon = "rbxassetid://10734950020"
+	}),
+	Premium = premium == "premium" and L_37_:AddTab({
+		Title = "Premium",
+		Icon = "rbxassetid://10709819149"
 	}),
 
 }
