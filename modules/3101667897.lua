@@ -339,7 +339,7 @@ local function L_17_func(L_97_arg1, L_98_arg2, L_99_arg3)
 							end
 							if L_14_.AutoGems.Value then
 								spawn(function()
-									for L_103_forvar1 = 1, 5 do
+									for L_103_forvar1 = 1, 3 do
 										task.wait()
 										game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Gem", L_98_arg2)
 										game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Red Orb", L_98_arg2)
@@ -348,7 +348,7 @@ local function L_17_func(L_97_arg1, L_98_arg2, L_99_arg3)
 							end  
 							if not L_14_.AutoGems.Value then 
 								spawn(function()
-									for L_104_forvar1 = 1, 5 do
+									for L_104_forvar1 = 1, 3 do
 										task.wait()
 										game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Red Orb", L_98_arg2)
 									end
@@ -396,7 +396,7 @@ local L_20_ = L_16_.Main:AddToggle("AutoHoop", {
 	Callback = function(L_108_arg1)
 		if L_108_arg1 then 
 			repeat
-				task.wait()  
+				wait(1)  
 				for L_109_forvar1, L_110_forvar2 in pairs(game.Workspace.Hoops:GetChildren()) do
 					if L_110_forvar2.Name == 'Hoop' then
 						firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), L_110_forvar2, 0)
@@ -414,7 +414,7 @@ local L_21_ = L_16_.Main:AddToggle("AutoRace", {
 	Callback = function(L_111_arg1)
 		if L_111_arg1 then 
 			repeat
-				task.wait(.1)  
+				task.wait(1)  
 				local L_112_, L_113_ = pcall(function() 
 					if game:GetService("Players").LocalPlayer.PlayerGui.gameGui.raceJoinLabel.Visible == true then 
 						game:GetService("ReplicatedStorage").rEvents.raceEvent:FireServer("joinRace")
@@ -478,7 +478,7 @@ local L_24_ = L_16_.Egg:AddToggle("AutoEvolve", {
 	Callback = function(L_119_arg1)
 		if L_119_arg1 then 
 			repeat
-				task.wait(.1)  
+				task.wait(1)  
 				for L_120_forvar1, L_121_forvar2 in ipairs(game:GetService("ReplicatedStorage").cPetShopFolder:GetChildren()) do
 					game:GetService("ReplicatedStorage").rEvents.petEvolveEvent:FireServer("evolvePet", L_121_forvar2.Name)
 				end   
@@ -493,7 +493,7 @@ local L_25_ = L_16_.Egg:AddToggle("AutoDelete", {
 	Callback = function(L_122_arg1)
 		if L_122_arg1 then 
 			repeat
-				task.wait(.1)  
+				task.wait(1)  
 				local L_123_ = {
 					game:GetService("Players").LocalPlayer.petsFolder.Advanced,
 					game:GetService("Players").LocalPlayer.petsFolder.Rare,
@@ -522,7 +522,7 @@ local L_26_ = L_16_.Egg:AddToggle("AutoDeleteTrails", {
 	Callback = function(L_128_arg1)
 		if L_128_arg1 then 
 			repeat
-				task.wait(.1)  
+				task.wait(1)  
 				local L_129_ = game:GetService("Players").LocalPlayer.trailsFolder.Unique
 				if L_129_ ~= nil then
 					for L_131_forvar1, L_132_forvar2 in ipairs(L_129_:GetChildren()) do
