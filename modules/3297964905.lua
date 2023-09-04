@@ -83,6 +83,10 @@ local L_31_ = {
 	" | guess what? ... nexus back",
 	" | nexus on top!",
 	" | Panda is a bad moderator",
+	" | domshoe is a W",
+	" | domshoe supports nexus",
+	" | domshoe hates panda",
+	" | Domshoe uses Nexus's script",
 	" | tell Panda nexus wuvs her ;)"
 }
 local L_32_ = {}
