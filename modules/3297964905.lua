@@ -1296,7 +1296,6 @@ task.spawn(function()
 					if not table.find(L_80_, L_343_forvar2.Name) and L_343_forvar2 ~= game.Players.LocalPlayer then
 						local L_345_ = L_343_forvar2.Name:gsub("_", "")
 						table.insert(L_80_, L_345_)
-						print("Detected:", L_345_)
 						L_81_[L_343_forvar2] = true  
 						L_83_func() 
 					end
