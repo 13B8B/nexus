@@ -78,13 +78,11 @@ local L_30_ = {
 	"Random"
 }
 local L_31_ = {
-	" | nexus takeover",
-	" | nexus gaming chair",
-	" | Panda is a bad moderator",
-	" | domshoe is a W",
-	" | domshoe supports nexus",
-	" | Domshoe uses Nexus's script",
-	"steam is a furry"
+    " | nexus takeover",
+    " | nexus gaming chair",
+    " | domshoe is a W",
+    " | Domshoe uses Nexus's script",
+    "steam is a furry"
 }
 local L_32_ = {}
 
