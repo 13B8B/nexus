@@ -1296,21 +1296,22 @@ game.Players.PlayerRemoving:Connect(function(L_344_arg1)
 end)
 
 task.spawn(function()
-	while wait() do 
-		for L_345_forvar1, L_346_forvar2 in ipairs(game.Players:GetPlayers()) do
-			L_346_forvar2.Chatted:Connect(function(L_347_arg1)
-				if L_347_arg1 == "nexus-is-back" and not L_82_[L_346_forvar2] then
-					if not table.find(L_81_, L_346_forvar2.Name) and L_346_forvar2 ~= game.Players.LocalPlayer then
-						local L_348_ = L_346_forvar2.Name:gsub("_", "")
-						table.insert(L_81_, L_348_)
-						print("Detected:", L_348_)
-						L_82_[L_346_forvar2] = true  
-						L_84_func() 
-					end
-				end  
-			end) 
-		end
-	end
+    while wait() do 
+        if L_29_.Connected then
+            for L_345_forvar1, L_346_forvar2 in ipairs(game.Players:GetPlayers()) do
+                L_346_forvar2.Chatted:Connect(function(L_347_arg1)
+                    if L_347_arg1 == "nexus-is-back" and not L_82_[L_346_forvar2] then
+                        if not table.find(L_81_, L_346_forvar2.Name) and L_346_forvar2 ~= game.Players.LocalPlayer then
+                            local L_348_ = L_346_forvar2.Name:gsub("_", "")
+                            table.insert(L_81_, L_348_)
+                            L_82_[L_346_forvar2] = true  
+                            L_84_func() 
+                        end
+                    end  
+                end) 
+            end
+        end
+    end
 end)
 
 L_83_ = premium == "premium" and L_37_.Premium:AddDropdown("Dropdown", {
