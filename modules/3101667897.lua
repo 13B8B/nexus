@@ -339,7 +339,7 @@ local function L_17_func(L_97_arg1, L_98_arg2, L_99_arg3)
 							end
 							if L_14_.AutoGems.Value then
 								spawn(function()
-									for L_103_forvar1 = 1, 3 do
+									for L_103_forvar1 = 1, 4 do
 										task.wait()
 										game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Gem", L_98_arg2)
 										game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Red Orb", L_98_arg2)
@@ -348,7 +348,7 @@ local function L_17_func(L_97_arg1, L_98_arg2, L_99_arg3)
 							end  
 							if not L_14_.AutoGems.Value then 
 								spawn(function()
-									for L_104_forvar1 = 1, 3 do
+									for L_104_forvar1 = 1, 4 do
 										task.wait()
 										game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", "Red Orb", L_98_arg2)
 									end
