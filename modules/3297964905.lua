@@ -80,7 +80,6 @@ local L_30_ = {
 local L_31_ = {
 	" | nexus takeover",
 	" | nexus gaming chair",
-	" | Panda is a bad moderator",
 	" | domshoe is a W",
 	" | domshoe supports nexus",
 	" | Domshoe uses Nexus's script",
