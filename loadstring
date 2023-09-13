@@ -1,1 +1,11 @@
-loadstring(game:HttpGet("https://github.com/s-o-a-b/nexus/blob/main/loadstring"))()
+local scriptURL = "https://raw.githubusercontent.com/13B8B/nexus/main/modules/" .. game.PlaceId .. ".lua"
+local scriptContent = game:HttpGet(scriptURL)
+
+if scriptContent then
+    local success, result = pcall(function()
+        loadstring(scriptContent)()
+    end)
+    if not success then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/13B8B/nexus/main/universal.lua'))()
+    end
+end
