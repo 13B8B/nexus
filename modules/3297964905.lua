@@ -83,7 +83,7 @@ local L_31_ = {
 	" | domshoe is a W",
 	" | domshoe supports nexus",
 	" | Domshoe uses Nexus's script",
-	"steamv2 is a furry"
+	"steam is a furry"
 }
 local L_32_ = {}
 
